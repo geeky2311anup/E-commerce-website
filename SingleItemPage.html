@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/db680a8c77.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" sizes="32x32" href="https://shop.polymer-project.org/esm-bundled/images/shop-icon-32.png">
+    <title>Anup Polymer</title>
+</head>
+
+<body>
+    <div class="cover">
+        <input type="checkbox" id="menu-toggle" hidden>
+        <header>
+            <nav id="content-container">
+                <div id="toolbar">
+                    <!-- start -->
+                    <!-- left menu part in header -->
+                    <div class="left-bar-item">
+                        <label for="menu-toggle" class="menu-btn">
+                            <i class="fa-solid fa-bars" id="bars2" style="color: #000000;"></i>
+                            <a href="./itemListingPage.html"><i class="fa-solid fa-arrow-left"></i></a>
+                        </label>
+                    </div>
+
+                    <!-- title part in header -->
+
+                    <div class="main-title">
+                        <a href="./index.html">SHOP</a>
+                    </div>
+
+                    <!-- cart part in header -->
+
+                    <div class="cart-container">
+                        <a href="./cartPage.html">
+                            <button class="cart-btn">
+                                <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                            </button>
+                        </a>
+                        <div class="popup-icon">
+                            <p>1</p>
+                        </div>
+                    </div>
+
+                    <!-- end -->
+
+                </div>
+            </nav>
+        </header>
+
+        <!-- Slide menu  -->
+        <!-- start -->
+        <label for="menu-toggle" class="slide-menu-layout">
+            <div id="slide-menu-container">
+                <ul class="sidebar-links">
+                    <li><a href="./itemListingPage.html">Men's Outerwear</a></li>
+                    <li><a href="./itemListingPage.html">Ladies Outerwear</a></li>
+                    <li><a href="./itemListingPage.html">Men's Tshirts</a></li>
+                    <li><a href="./itemListingPage.html">Ladies T-shirts</a></li>
+                </ul>
+            </div>
+        </label>
+
+        <header class="header2 shop-tabs" hidden>
+            <nav id="header2-container">
+                <div id="header2-toolbar">
+                    <ul class="shop-tabs-list">
+                        <li><a href="./itemListingPage.html">Men's Outerwear</a></li>
+                        <li><a href="./itemListingPage2.html">Ladies Outerwear</a></li>
+                        <li><a href="./itemListingPage3.html">Men's T-Shirts</a></li>
+                        <li><a href="./itemListingPage4.html">Ladies T-Shirts</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- end -->
+
+
+        <main class="single-item">
+            <div id="content">
+                <div class="img-cont">
+                    <img src="./assets/mens-outwear-2.jpg">
+                </div>
+                <div class="detail">
+                    <h1>Anvil L/S Crew Neck - Grey</h1>
+                    <div class="single-item-price">$22.15</div>
+                    <div class="pickers">
+                        <section class="size">
+                            <label id="size-label">Size</label>
+                            <select id="size-select">
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M" selected="">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <!-- <hr> -->
+                        </section>
+
+                        <section class="quantity">
+                            <label id="quantity">Quantity</label>
+                            <select id="quantity">
+                                <option value="1" selected="">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <!-- <hr> -->
+                        </section>
+
+                    </div>
+
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p id="desc">
+                            You'll be swooning over this crew neck as soon as you feel how soft it is.
+                        </p>
+                        <div><br></div>
+                        <div>Features:</div>
+                        <div class="">
+                            <ul>
+                                <li>
+                                    40% preshrunk ring-spun cotton, 60% polyester terry fleece. 
+                                </li>
+                                <li>
+                                    Available in dark heather charcoal with the white Google logo screen printed across
+                                    center chest.
+                                </li>
+                            </ul>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="btn-cont">
+                        <button><a href="./cartPage.html">Add to cart</a></button>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+
+
+    </div>
+    <footer class="single-footer">
+        <a>Made by Arnab Das</a>
+        <div class="demo-label">Demo Only</div>
+    </footer>
+</body>
+
+</html>

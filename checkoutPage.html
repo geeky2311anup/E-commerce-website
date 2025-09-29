@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/db680a8c77.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" sizes="32x32" href="https://shop.polymer-project.org/esm-bundled/images/shop-icon-32.png">
+    <title>Anup Polymer</title>
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle" hidden>
+    <header>
+        <nav id="content-container">
+            <div id="toolbar">
+                <!-- start -->
+                <!-- left menu part in header -->
+                <div class="left-bar-item">
+                    <label for="menu-toggle" class="menu-btn">
+                        <i class="fa-solid fa-bars" style="color: #000000;"></i>
+                    </label>
+                </div>
+
+                <!-- title part in header -->
+
+                <div class="main-title">
+                    <a href="./index.html">SHOP</a>
+                </div>
+
+                <!-- cart part in header -->
+
+                <div class="cart-container">
+                    <a href="./cartPage.html">
+                        <button class="cart-btn">
+                            <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                        </button>
+                    </a>
+                    <div class="popup-icon">
+                        <p>1</p>
+                    </div>
+                </div>
+
+                <!-- end -->
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slide menu  -->
+    <!-- start -->
+    <label for="menu-toggle" class="slide-menu-layout">
+        <div id="slide-menu-container">
+            <ul class="sidebar-links">
+                <li><a href="./itemListingPage.html">Men's Outerwear</a></li>
+                <li><a href="./itemListingPage.html">Ladies Outerwear</a></li>
+                <li><a href="./itemListingPage.html">Men's Tshirts</a></li>
+                <li><a href="./itemListingPage.html">Ladies T-shirts</a></li>
+            </ul>
+        </div>
+    </label>
+
+    <!-- end -->
+
+
+    <main class="cart-items">
+        <div class="main-frame">
+            <section class="subsection">
+
+                <header class="category-header" id="checkout-head">
+                    <h1>Checkout</h1>
+                    <span>Shop is a demo app - form data will not be sent</span>
+                </header>
+
+                <form method="post">
+                    <section id="info-head">
+
+                        <h2 id="account-info-heading">Account Information</h2>
+                        <div class="row input-row">
+                            <input id="account-email" type="email" name="account-email" placeholder="Email" required>
+                        </div>
+                        <div class="row input-row">
+                            <input id="account-phone" type="tel" name="account-phone" pattern="\d{10,}"
+                                placeholder="Phone Number" required>
+                        </div>
+
+                        <h2 id="shipping-address-head">Shipping Address</h2>
+                        <div class="row input-row">
+                            <input id="shipping-address" type="text" name="ship-address" pattern=".{5,}"
+                                placeholder="Address" required>
+                        </div>
+                        <div class="row input-row">
+                            <input id="shipping-city" type="text" name="shipping-city" pattern=".{2,}"
+                                placeholder="City" required>
+                        </div>
+                        <div class="row input-row addr-row">
+                            <input id="shipping-state" type="text" name="shipping-state" pattern=".{2,}"
+                                placeholder="State/Province" required>
+                            <input id="shipping-zip" type="text" name="shipping-zip" pattern=".{4,}"
+                                placeholder="Zip/Postal Code" required>
+                        </div>
+                        <div class="column country-info">
+
+                            <label id="ship-country-label" class="shop-select-label">Country</label>
+                            <select id="ship-country" name="ship-country" required>
+                                <option value="US" selected>United States</option>
+                                <option value="CA"> Canada</option>
+                            </select>
+                        </div>
+
+
+                        <h2 id="bill-address-heading">Billing Address</h2>
+                        <div class="billing-address-picker">
+                            <input id="set-billing" type="checkbox" name="set-billing" value="on">
+                            <label for="setBilling">Use different billing address</label>
+                        </div>
+
+
+                    </section>
+
+
+                    <section id="payment-head">
+                        <h2>Payment Method</h2>
+                        <div class="row input-row">
+                            <input id="card-holder-name" type="text" name="card-holder-name" pattern=".{3,1}"
+                                placeholder="Cardholder Name" required>
+                        </div>
+                        <div class="row input-row">
+                            <input id="card-number" type="tel" name="card-number" pattern="[\d\s]{15,}"
+                                placeholder="Card Number" required>
+                        </div>
+                        <div class="row input-row card-info">
+                            <div class="column">
+                                <label for="ExpMonth">Expiry</label>
+                                <select id="ExpMonth" required>
+                                    <option value="01" selected="">Jan</option>
+                                    <option value="02">Feb</option>
+                                    <option value="03">Mar</option>
+                                    <option value="04">Apr</option>
+                                    <option value="05">May</option>
+                                    <option value="06">Jun</option>
+                                    <option value="07">Jul</option>
+                                    <option value="08">Aug</option>
+                                    <option value="09">Sep</option>
+                                    <option value="10">Oct</option>
+                                    <option value="11">Nov</option>
+                                    <option value="12">Dec</option>
+                                </select>
+                            </div>
+                            <div class="exp-year-cont">
+                                <select name="exp-year" id="exp-year">
+                                    <option value="2016" selected="">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                </select>
+                            </div>
+                            <div class="cvv-cont">
+                                <input id="cvv" type="tel" name="cvv" pattern="\d{3,4}" placeholder="CVV" required>
+                            </div>
+                        </div>
+
+
+                        <h2 id="order-head">Order Summary</h2>
+                        <div class="row order-summary-row">
+                            <div class="flex-cart">Anvil L/S Crew Neck - Grey</div>
+                            <div class="summary-price">$22.15</div>
+                        </div>
+                        <div class="row total-row">
+                            <div class="flex-cart">Total</div>
+                            <div class="total-price">$22.15</div>
+                        </div>
+                        <div class="checkout-btn">
+                            <button>
+                                <a href="./checkoutPage.html">Place Order</a>
+                            </button>
+                        </div>
+                        <button id="butt2_1" class="butt2 ">
+                            <a href="./checkoutPage.html">Place Order</a>
+                        </button>
+
+
+                    </section>
+                </form>
+
+            </section>
+        </div>
+
+        <footer class="footer-check-out">
+            <a>Made by Anup</a>
+            <div class="demo-label">Demo Only</div>
+        </footer>
+    </main>
+
+</body>
+
+</html>

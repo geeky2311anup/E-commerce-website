@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/db680a8c77.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" sizes="32x32" href="https://shop.polymer-project.org/esm-bundled/images/shop-icon-32.png">
+    <title>Anup Polymer</title>
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle" hidden>
+    <header>
+        <nav id="content-container">
+            <div id="toolbar">
+                <!-- start -->
+                <!-- left menu part in header -->
+                <div class="left-bar-item">
+                    <label for="menu-toggle" class="menu-btn">
+                        <i class="fa-solid fa-bars" style="color: #000000;"></i>
+                    </label>
+                </div>
+
+                <!-- title part in header -->
+
+                <div class="main-title">
+                    <a href="./index.html">SHOP</a>
+                </div>
+
+                <!-- cart part in header -->
+
+                <div class="cart-container">
+                    <a href="./cartPage.html">
+                        <button class="cart-btn">
+                            <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+                        </button>
+                    </a>
+                    <div class="popup-icon">
+                        <p>1</p>
+                    </div>
+                </div>
+
+                <!-- end -->
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slide menu  -->
+    <!-- start -->
+    <label for="menu-toggle" class="slide-menu-layout">
+        <div id="slide-menu-container">
+            <ul class="sidebar-links">
+                <li><a href="./itemListingPage.html">Men's Outerwear</a></li>
+                <li><a href="./itemListingPage.html">Ladies Outerwear</a></li>
+                <li><a href="./itemListingPage.html">Men's Tshirts</a></li>
+                <li><a href="./itemListingPage.html">Ladies T-shirts</a></li>
+            </ul>
+        </div>
+    </label>
+
+    <!-- end -->
+
+
+    <main class="cart-items">
+        <div class="main-frame">
+            <section class="subsection">
+
+                <header class="category-header" id="cart-head">
+                    <h1>Your Cart</h1>
+                    <span>(1 item)</span>
+                </header>
+
+
+                <article class="list">
+                    <div class="shop-cart-item">
+
+                        <a href="./SingleItemPage.html">
+                            <img src="./assets/mens-outwear-2.jpg">
+                        </a>
+
+                        <div class="flex">
+                            <div class="name">
+                                <a>
+                                    Anvil L/S Crew Neck - Grey
+                                </a>
+                                <i class="fa-solid fa-xmark i1" style="color: rgb(117, 117, 117);"></i>
+                            </div>
+                            <div class="cart-detail">
+                                <div class="cart-quantity">
+                                    <div class="shop-select">
+                                        <label>Qty:</label>
+                                        <select id="quantitySelect">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="cart-size">
+                                    Size:
+                                    <span>M</span>
+                                </div>
+                                <div class="cart-price">
+                                    $22.15
+                                </div>
+                            </div>
+                            <div class="i2cont">
+                                <i class="fa-solid fa-xmark i2" style="color: rgb(117, 117, 117);"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="checkout-box">
+                    Total:
+                    <span class="subtotal">$22.15</span>
+                    <div class="checkout-btn">
+                        <button>
+                            <a href="./checkoutPage.html">Checkout</a>
+                        </button>
+                    </div>
+                    <button class="butt2">
+                        <a href="./checkoutPage.html">Checkout</a>
+                    </button>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>

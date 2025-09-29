@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/db680a8c77.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" sizes="32x32" href="https://shop.polymer-project.org/esm-bundled/images/shop-icon-32.png">
+  <title>Anup Polymer</title>
+</head>
+
+<body>
+  <input type="checkbox" id="menu-toggle" hidden>
+  <header>
+    <nav id="content-container">
+      <div id="toolbar">
+        <!-- start -->
+        <!-- left menu part in header -->
+        <div class="left-bar-item">
+          <label for="menu-toggle" class="menu-btn">
+            <i class="fa-solid fa-bars" style="color: #000000;"></i>
+          </label>
+        </div>
+
+        <!-- title part in header -->
+
+        <div class="main-title">
+          <a href="./index.html">SHOP</a>
+        </div>
+
+        <!-- cart part in header -->
+
+        <div class="cart-container">
+          <a href="./cartPage.html">
+            <button class="cart-btn">
+              <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+            </button>
+          </a>
+          <div class="popup-icon">
+            <p>1</p>
+          </div>
+        </div>
+
+
+        <!-- end -->
+
+      </div>
+    </nav>
+  </header>
+
+  <header class="header2 shop-tabs" hidden>
+    <nav id="header2-container">
+      <div id="header2-toolbar">
+        <ul class="shop-tabs-list">
+          <li><a href="./itemListingPage.html">Men's Outerwear</a></li>
+          <li><a href="./itemListingPage2.html">Ladies Outerwear</a></li>
+          <li><a href="./itemListingPage3.html">Men's T-Shirts</a></li>
+          <li><a href="./itemListingPage4.html">Ladies T-Shirts</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Slide menu  -->
+  <!-- start -->
+  <label for="menu-toggle" class="slide-menu-layout">
+    <div id="slide-menu-container">
+      <ul class="sidebar-links">
+        <li><a href="./itemListingPage.html">Men's Outerwear</a></li>
+        <li><a href="./itemListingPage2.html">Ladies Outerwear</a></li>
+        <li><a href="./itemListingPage3.html">Men's Tshirts</a></li>
+        <li><a href="./itemListingPage4.html">Ladies T-shirts</a></li>
+      </ul>
+    </div>
+  </label>
+
+  <!-- end -->
+
+
+  <main class="shop-main">
+    <div class="shop-home">
+
+      <article class="item item1">
+        <a href="./itemListingPage.html">
+          <img src="./assets/mens_outerwear.jpg">
+        </a>
+        <h2>Men's Outerwear</h2>
+        <a href="./itemListingPage.html"><button>SHOP NOW</button></a>
+      </article>
+
+      <article class="item item2">
+        <a href="./itemListingPage2.html">
+          <img src="./assets/ladies_outerwear.jpg">
+        </a>
+        <h2>Ladies Outerwear</h2>
+        <button><a href="./itemListingPage2.html">SHOP NOW</a></button>
+      </article>
+
+      <article class="item item3 inline">
+        <a href="./itemListingPage3.html">
+          <img src="./assets/mens_tshirts.jpg">
+        </a>
+        <h2>Men's T-Shirts</h2>
+        <button><a href="./itemListingPage3.html">SHOP NOW</a></button>
+      </article>
+
+      <article class="item item4 inline">
+        <a href="./itemListingPage4.html">
+          <img src="./assets/ladies_tshirts.jpg">
+        </a>
+        <h2>Ladies T-Shirts</h2>
+        <button><a href="./itemListingPage4.html">SHOP NOW</a></button>
+      </article>
+
+    </div>
+  </main>
+
+
+  <footer>
+    <a>Made by Anup</a>
+    <div class="demo-label">Demo Only</div>
+  </footer>
+
+
+</body>
+
+</html>
