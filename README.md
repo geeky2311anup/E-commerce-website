@@ -1,6 +1,6 @@
 # Anup polymer
 
-### The has 5 pages:
+### The Website has 5 pages:
 
 - Home Page
 - Item listing page
